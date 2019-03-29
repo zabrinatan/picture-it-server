@@ -1,3 +1,5 @@
 class EmotionsController < ApplicationController
-    has_many :texts
+    def index
+        @emotions = Emotion.all
+    end
 end
